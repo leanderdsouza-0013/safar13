@@ -1,0 +1,138 @@
+/* Font Family */
+body {
+  font-family: 'Roboto', Arial, sans-serif; /* Use Roboto font family */
+}
+
+/* About Us section styling */
+.about-us {
+  background-color: #f7f7f7; /* Lighter background color */
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about-us h3 {
+  font-size: 2.8em; /* Larger heading */
+  margin-bottom: 20px; /* Increased space below heading */
+  font-family: 'Roboto', Arial, sans-serif; /* Use Roboto font family */
+  color: #333; /* Darker text color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* About Us section styling */
+.about-us p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 40px; /* Increased space after description */
+  color: #555; /* Slightly darker text color */
+  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition for color and border */
+  border: 2px solid transparent; /* Transparent border initially */
+  padding: 10px; /* Add padding */
+}
+
+.about-us p:hover {
+  color: #3b15e5fc; /* Change text color on hover */
+  border-color: #e61b2cfc; /* Change border color on hover */
+}
+
+/* Future Goals section styling */
+.future-goals p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 40px; /* Increased space after goals */
+  color: #555; /* Slightly darker text color */
+  font-family: 'Arial', sans-serif; /* Use a different font */
+  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition for color and border */
+  border: 2px solid transparent; /* Transparent border initially */
+  padding: 10px; /* Add padding */
+}
+
+.future-goals p:hover {
+  color: #067b04fc; /* Change text color on hover */
+  border-color: #067b04fc; /* Change border color on hover */
+}
+
+/* Logo styling */
+.logo-container img {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px; /* Add margin to separate from text */
+}
+
+/* Future Goals section styling */
+.future-goals {
+  margin-top: 40px; /* Add space above the Future Goals section */
+}
+
+.future-goals p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 40px; /* Increased space after goals */
+  color: #555; /* Slightly darker text color */
+  font-family: 'Arial', sans-serif; /* Use a different font */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.future-goals button {
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.future-goals button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+/* Management Team section styling */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* Increased gap between team members */
+}
+
+.team-member {
+  width: calc(25% - 30px); /* Adjust for 4 members and gap size */
+  text-align: center;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* White background color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.team-member img {
+  border-radius: 50%;
+  width: 120px; /* Larger image size */
+  height: 120px;
+  margin: 20px auto 10px; /* Center image and adjust spacing */
+  object-fit: cover; /* Maintain aspect ratio */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Slight shadow effect */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.team-member img:hover {
+  transform: scale(1.1); /* Enlarge image on hover */
+}
+
+.team-member h4 {
+  font-size: 1.4em; /* Larger font size */
+  margin-bottom: 10px;
+  color: #333; /* Darker text color */
+}
+
+.team-member p {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #666; /* Slightly lighter text color */
+}
+
+/* Hover effect for team members */
+.team-member:hover {
+  transform: translateY(-5px); /* Move up slightly on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+}

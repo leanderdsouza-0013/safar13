@@ -1,0 +1,1103 @@
+
+carousel-cont {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Add this line to hide overflow */
+}
+.logo {
+    width: 200px; /* Adjust the width to your desired size */
+    margin-bottom: 40px;
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add hover effect */
+.logo:hover {
+    transform: scale(1.1); /* Scale the logo on hover */
+    cursor: pointer; /* Change cursor to pointer on hover for interactivity */
+}
+
+.carousel-item {
+    width: 100%; /* Adjusted width to fill the container */
+    height: 95%; /* Increased height to push the image downwards */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-bottom: 60px; /* Increased padding at the bottom */
+    text-align: center;
+    transition: 1s ease;
+}
+
+.CarouselControl {
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    background-color: rgba(128, 128, 128, 0.205);
+    border: 1px solid rgba(128, 128, 128, 0.281);
+    outline: none;
+}
+
+.CarouselControl:hover {
+    background-color: rgba(128, 128, 128, 0.548);
+    transition: 0.5s ease;
+}
+
+
+h2 {
+    font-size: 5rem;
+    transition: 1s ease;
+}
+
+p {
+    transition: 1s ease;
+}
+
+.Carousel-text-btn {
+    font-size: 1rem;
+    margin-top: 10px; /* Adjusted margin-top */
+    padding: 15px 25px;
+    background-color: white;
+    border: none;
+    outline: none;
+    position: relative; /* Maintain relative positioning for pseudo-element */
+} 
+/* Add a comment to explain the pseudo-element customization */
+/* Add a pseudo-element to create a background hover effect */
+.Carousel-text-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    z-index: -1;
+    transition: transform 0.5s;
+    transition-duration: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0); /* Initially scale to 0 width */
+}
+
+/* Add a hover effect to reveal the pseudo-element */
+.Carousel-text-btn:hover::before {
+    transform: scaleX(1); /* Scale to full width on hover */
+}
+
+/* Add hover effect for changing text and background color */
+.Carousel-text-btn:hover {
+    color: white; /* Change text color on hover */
+    background-color: black; /* Change background color on hover */
+    transition: color 0.5s, background-color 0.5s; /* Smooth transition */
+}
+
+/* .Carousel-text-btn::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: black;
+    z-index: -1;
+    transition: transform 0.5s;
+    transition-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+}
+
+.Carousel-text-btn::before {
+    transform: scaleX(0);
+}
+
+
+
+
+.Carousel-text-btn:hover::before {
+    transform: scaleX(1);
+} */
+
+/* .Carousel-text-btn:hover {
+    background-color: black;
+    color: white;
+    transition: .5s ease;
+} */
+
+
+
+
+
+
+/* textSpace CSS---------------------------------------->>>>>>>>>>>>>>>> */
+
+
+.textSpace-cont {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h6 {
+    font-size: .9em;
+    font-weight: 400;
+    margin: 10px 0px;
+}
+
+h3 {
+    font-size: 4rem;
+    margin: 25px 0px;
+}
+
+.textSpace-text {
+    line-height: 1.6rem;
+    /* font-size: 100px; */
+}
+
+/* DineDisplay CSS  ------------------------------>>>>>>>>>>>>>>>>> */
+
+table {
+    width: 100%;
+    padding: 20px 50px;
+    flex-wrap: wrap;
+}
+
+tr {
+    width: 100%;
+
+}
+
+td {
+    width: 50%;
+}
+
+/* td {
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DineDish CSS  -------------------------------->>>>>>>>>>>> */
+
+.DineDish-cont {
+    width: 95%;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgba(128, 128, 128, 0.137); */
+    /* background-color: rgba(128, 128, 128, 0.068); */
+    /* border-radius: 5px; */
+    margin: 10px 10px;
+    border-radius: 30px;
+    background: #e0e0e07c;
+    box-shadow: 10px 10px 20px #bebebe6c,
+        -15px -15px 30px #ffffff;
+}
+
+.DineDish-img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.DineDish-description {
+    width: 100%;
+    padding: 5px 10px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.DineDish-text {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+hr {
+    min-width: 100px;
+    height: 1px;
+    margin: 0px 15px;
+}
+
+h6 {
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.DineDish-text-para {
+    font-size: .9rem;
+}
+
+
+
+
+/* CoverLetter CSS  --------------------------------------->>>>>>>>>>>> */
+
+.coverLetter-cont {
+    min-height: 30vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
+    margin-bottom: 30px;
+}
+
+.CoverLetter {
+    width: 90%;
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+
+.CoverLetterBtn {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    /* margin-top: 30px; */
+    padding: 15px 25px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+/* .CoverLetterBtn:hover {
+    background-color: black;
+    color: white;
+    transition: .5s ease;
+} */
+
+
+
+/* ComentSection CSS  -------------------------------------->>>>>>>>>>>>> */
+
+
+.CommentSec-cont {
+    min-height: 60vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    /* background-color: grey; */
+    margin-bottom: 30px;
+}
+
+
+
+.CommentSection {
+    width: 90%;
+    background-color: grey;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+}
+
+
+
+
+/* CommentCard CSS ----------------------------------->>>>>>>>>> */
+
+.Card-cont {
+    width: 350px;
+    height: 400px;
+    /* background-color: rgb(255, 255, 255); */
+    padding: 60px 15px;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+}
+
+.Card-holder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Card-line1 {
+    font-size: .9rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.card-bottom {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card-bottom img {
+    width: 50px;
+}
+
+.card-bottom span {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0px 20px; */
+}
+
+.cardhr {
+    /* background-color: rgba(116, 115, 115, 0.507);
+     */
+    color: rgba(129, 126, 126, 0.13);
+    margin: 0px 50px;
+}
+
+
+
+.form-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(255, 255, 255); */
+    background: #e0e0e081;
+    padding: 50px 0px;
+}
+
+form {
+    width: 40%;
+    min-height: 90vh;
+    padding: 40px 35px 35px 35px;
+    border-radius: 40px;
+    /* border-radius: 50px; */
+    background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    text-align: center;
+}
+
+
+
+
+
+
+.input-cont {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 7px;
+    font-size: .8rem;
+}
+
+/* input {
+    border: none;
+    outline: none;
+    font-size: 1.2em;
+    background-color: transparent;
+    position: rela;
+} */
+
+.input {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 20px 20px 60px #c5c5c5,
+        -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+
+.input:focus {
+    /* outline-color: #e8e8e8; */
+    outline: none;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+        inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+
+/* input::before {
+    content: "hgjh";
+    display: block;
+    width: 100%;
+    height: 3px solid black;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+} */
+
+.form-logo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.register-btn {
+    /* display: grid; */
+    /* place-items: center; */
+    /* background: #e3edf7; */
+    background: #e8e8e8;
+    padding: 1.4em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.register-btn:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(0.5em);
+}
+
+
+.exCont {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 63, 63, 0.24);
+    /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+}
+
+.overlay-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 2em;
+    padding: .2em;
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+.overlay-btn:hover {
+    cursor: pointer;
+}
+
+.overlay-cont {
+    width: 80%;
+    height: 85%;
+    /* background-color: rgba(0, 0, 0, 0.705); */
+    /* margin: auto; */
+    /* margin-top: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff; */
+}
+
+.overlayImg {
+    /* width: 10em; */
+    height: 100%;
+}
+
+.food-desc {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(236, 236, 236);
+    padding: 1.5em;
+}
+
+td:hover {
+    cursor: pointer;
+}
+
+.overlay-name {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.food-desc-1 {
+    width: 100%;
+    min-height: 60%;
+    /* background-color: grey; */
+    line-height: 270%;
+    position: relative;
+}
+
+.overlay-line1 {
+    font-size: 1.3em;
+    font-weight: 500;
+}
+
+.overlay-line2 {
+    font-weight: 500;
+}
+
+.overlay-line3 {
+    font-weight: 500;
+}
+
+.star {
+    font-size: 1.3em;
+}
+
+
+.food-desc-btn-cont {
+    /* position: absolute; */
+    /* bottom: 0; */
+    width: 100%;
+    /* background-color: black; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 30px 0;
+}
+
+
+
+.food-desc-btn {
+
+    background: #e8e8e8;
+    padding: 1.4em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s;
+    margin: 0 1em;
+}
+
+
+.food-desc-btn:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(0.5em);
+}
+
+
+.food-desc-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0px;
+}
+
+.food-desc-logoImg {
+    width: 200px;
+}
+
+
+.cart-cont {
+    width: 100%;
+    height: auto;
+    background: #e0e0e081;
+    padding: 4rem 2em;
+}
+
+.cart-cont-ele {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.cart-remove-btn {
+    background: #e8e8e8;
+    padding: 1.4em;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.cart-remove-btn:hover {
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transform: translateY(0.5em);
+}
+
+
+
+
+.DineDish-cart-cont {
+    width: 95%;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: rgba(128, 128, 128, 0.137); */
+    /* background-color: rgba(128, 128, 128, 0.068); */
+    /* border-radius: 5px; */
+    margin: 10px 10px;
+    border-radius: 30px;
+    background: #e0e0e07c;
+    box-shadow: 10px 10px 20px #bebebe6c,
+        -15px -15px 30px #ffffff;
+}
+
+.cart-title {
+    margin-bottom: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+/* responsivenessss ====================================> */
+
+@media(max-width: 965px) {
+    h2 {
+        font-size: 4rem;
+        transition: 1s ease;
+    }
+
+    .register-btn {
+        /* display: grid; */
+        /* place-items: center; */
+        /* background: #e3edf7; */
+        font-size: .7em;
+        background: #e8e8e8;
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+            -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition: transform 0.5s;
+    }
+
+    .Carousel-text-btn {
+        font-size: .7rem;
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: rgb(18, 18, 18);
+        border: none;
+        outline: none;
+        /* position: relative; */
+    }
+
+    p {
+        font-size: .8em;
+        display: block;
+        margin-block-start: .7em;
+        margin-block-end: .7em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    .CarouselControl {
+        font-size: 1rem;
+        padding: 6px 12px;
+        background-color: rgba(128, 128, 128, 0.205);
+        border: 1px solid rgba(128, 128, 128, 0.281);
+        outline: none;
+    }
+
+    h3 {
+        font-size: 3rem;
+        margin: 25px 0px;
+    }
+
+    .textSpace-cont {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+        padding: 20px 30px;
+        flex-wrap: wrap;
+    }
+
+    td {
+        width: 45%;
+    }
+
+    .DineDish-img {
+        width: 55px;
+        height: 55px;
+        object-fit: contain;
+        border-radius: 50%;
+    }
+
+    .DineDish-text-para {
+        font-size: .7rem;
+    }
+
+    .CoverLetter {
+        width: 90%;
+        background-color: grey;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 10px 0px;
+    }
+
+    h3 {
+        font-size: 3rem;
+        margin: 15px 0px;
+    }
+
+    .CommentSection {
+        width: 90%;
+        background-color: grey;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    .textSpace-text {
+        line-height: 1.6rem;
+        /* font-size: 100px; */
+    }
+
+    .Card-cont {
+        width: 250px;
+        height: 300px;
+        /* background-color: rgb(255, 255, 255); */
+        padding: 60px 15px;
+        border-radius: 50px;
+        background: #e0e0e0;
+        box-shadow: 20px 20px 60px #bebebe,
+            -20px -20px 60px #ffffff;
+    }
+
+    .Card-line1 {
+        font-size: .6rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .overlay-name {
+        font-size: 1.5em;
+        font-weight: 500;
+        margin-top: 0;
+    }
+
+    .overlay-line1 {
+        font-size: 1em;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .overlay-line2 {
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .star {
+        font-size: 1em;
+    }
+
+    .overlay-line3 {
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .food-desc-btn-cont {
+        /* position: absolute; */
+        /* bottom: 0; */
+        width: 100%;
+        /* background-color: black; */
+        display: flex;
+        /* align-items: center; */
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .food-desc-btn {
+        background: #e8e8e8;
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+            -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+        border: 1px solid rgba(0, 0, 0, 0);
+        cursor: pointer;
+        transition: transform 0.5s;
+        margin: 0 1em;
+    }
+
+    .food-desc-logo {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0px;
+    }
+
+    .food-desc-logoImg {
+        width: 150px;
+    }
+}
+
+/* Footer Styling */
+.footer-cont {
+  height: 50vh;
+  background-color: rgb(0, 0, 0);
+  padding: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-inner {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  gap: 10px;
+}
+
+.row-elem {
+  list-style: none;
+  font-size: 1.3em;
+  color: white;
+}
+
+.foot-row>ul {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.foot-row {
+  height: 95%;
+}
+
+
+
+
+/* General Page Styling */
+body {
+  font-family: 'Open Sans', sans-serif; /* Professional font choice */
+  background-color: #f0f0f0; /* Light background for contrast */
+  color: #333; /* Primary text color */
+  margin: 0;
+  padding: 0;
+}
+
+.home-page {
+  max-width: 1700px; /* Set a maximum width for content */
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  padding: 50px 0;
+  background-image:-moz-linear-gradient(); /* Replace with your header image */
+  background-size: cover;
+  background-position: center;
+}
+
+.header h1 {
+  color: #070707; /* Ensure text readability on background */
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #0e0d0d;
+  font-size: 18px;
+}
+
+.cta-button {
+  background-color: #007bff; /* Primary accent color */
+  font-size: 2vh;
+  cursor: pointer;
+  flex-basis: 20%;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  width: 11%;
+  border: 2px solid rgb(59, 58, 58);
+  padding: 20px 40px;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Add hover effect */
+.cta-button:hover {
+  transform: scale(1.1); /* Scale the button on hover */
+}
+
+/* Carousel Styling (Adjust based on your carousel library) */
+.carousel {
+  margin-bottom: 50px;
+}
+
+/* About Section Styling */
+.about-section {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px; /* Add margin-bottom to create space between sections */
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.about-features {
+  list-style: none;
+  padding: 0;
+}
+
+.about-features li {
+  margin-bottom: 10px;
+}
+
+.learn-more-button {
+  background-color: #f0b35e; /* Secondary accent color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* Services Section Styling */
+.services-section {
+    background-color: #edeef1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-item {
+    flex-basis: 100%; /* Adjusted width */
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 3px solid green;
+    min-height: 100px; /* Set a minimum height for all service items */
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-item i {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .service-section .service-item h3 {
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold;
+    line-height: 1; /* Adjust line height as needed */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 992px) {
+    .service-section .service-item h3 {
+    font-size: 18px; /* Decrease font size for smaller screens */
+  }
+}
+
+/* Media query for even smaller screens */
+@media (max-width: 576px) {
+    .service-section .service-item h3 {
+    font-size: 16px; /* Further decrease font size for smaller screens */
+  }
+}
+  
+/* Testimonials Section Styling */
+.testimonials-section {
+  background-color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+/* .testimonials-section h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 
+} */
+
+/* General Signup Container */

@@ -1,0 +1,83 @@
+/* Contact-us Container */
+.contact-us-container {
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Contact Information */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1; /* Expand to fill remaining space */
+}
+
+/* Office Info */
+.office-info,
+.contact-details {
+  flex-basis: 50%;
+}
+
+.office-info {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.office-info h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.office-address {
+  margin-bottom: 20px;
+}
+
+/* Contact Details */
+.contact-details {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.contact-details h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+}
+
+.contact-label {
+  font-weight: bold;
+}
+
+.contact-value {
+  margin-left: 10px;
+}
+
+/* Social Media */
+.social-media {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333; /* Example background color */
+  color: #0a0a0a; /* Example text color */
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
